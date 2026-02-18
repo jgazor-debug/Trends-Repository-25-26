@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ultimate College Life Web Page</title>
+    
+    <!-- Combined CSS -->
+    <style>
+        /* ===== Global Style ===== */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0f0f0f;
+            color: #e4e4e4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background-color: #1a1a1a;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        /* ===== Section Cards ===== */
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #181818;
+            border-radius: 12px;
+            border: 1px solid #222;
+            transition: all 0.3s ease;
+        }
+
+        section:hover {
+            border-color: #333;
+        }
+
+        /* ===== Headings ===== */
+        h2 {
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        /* ===== Lists ===== */
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        /* ===== Button ===== */
+        button {
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #444;
+            padding: 10px 22px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* ===== Divider ===== */
+        hr {
+            border: none;
+            border-top: 1px solid #222;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        /* ===== Message Box ===== */
+        #messageBox {
+            margin-top: 15px;
+            font-weight: 400;
+            color: #cccccc;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        #messageBox.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Title -->
+    <header>
+        <h1>My Ultimate College Life Web Page</h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p><strong>Jason Gabriel M. Azor</strong></p>
+        <p>
+            Hi, I'm Jason — a 2nd Year BS Information Technology student who enjoys 
+            learning new technologies and improving my skills every day. 
+            I'm passionate about exploring the world of tech, building creative projects, 
+            and growing both personally and academically.
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>College Must-Haves</h2>
+        <ul>
+            <li>Laptop 💻</li>
+            <li>Phone 📱</li>
+            <li>Friends 👯‍♂️</li>
+            <li>AirPods 🎧</li>
+            <li>Eye Glasses 👓</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Daily Routine</h2>
+        <ol>
+            <li>Morning 🌅: Wake up, pray 🙏, and warm up 🏃‍♂️</li>
+            <li>Breakfast 🍳 and get ready 🧑‍🎓</li>
+            <li>Check Gmail 📧 or Google Classroom 💻</li>
+            <li>Attend classes or study 📚</li>
+            <li>Lunch with friends 🍔👯‍♂️</li>
+            <li>Afternoon 🕒: Continue attending classes 📖</li>
+            <li>Evening 🌇: Dinner with my girlfriend ❤️🍽️</li>
+            <li>Night 🌙: Review notes 📝, play games 🎮, and sleep 🛏️</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>Playing video games 🎮</li>
+            <li>Listening to music 🎧</li>
+            <li>Watching TV shows / series 📺</li>
+            <li>Sleeping 🛏️</li>
+            <li>Spending time with my girlfriend ❤️</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Additional Information</h2>
+        <ul>
+            <li>HTML & CSS Basics 💻</li>
+            <li>JavaScript Fundamentals 📜</li>
+            <li>SQL Database Basics 🗄️</li>
+            <li>Python Basics 🐍</li>
+            <li>OOP Fundamentals 🔄</li>
+            <li>C++ Novice 💾</li>
+        </ul>
+        <p><i>Feel free to reach out if you want to know more about my experiences! ✨</i></p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Click Me</h2>
+        <p>Press the button for a surprise:</p>
+        <button onclick="showMessage()">Click Here</button>
+        <p id="messageBox"></p>
+    </section>
+
+    <!-- Combined JavaScript -->
+    <script>
+        function showMessage() {
+            const message = document.getElementById("messageBox");
+            message.textContent = "try ko lang po magbutton ma'am :>";
+            message.classList.add("show");
+        }
+    </script>
+</body>
+</html>
