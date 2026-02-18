@@ -1,0 +1,89 @@
+/* ===== Global Style ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #e4e4e4;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #1a1a1a;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* ===== Section Cards ===== */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #181818;
+    border-radius: 12px;
+    border: 1px solid #222;
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    border-color: #333;
+}
+
+/* ===== Headings ===== */
+h2 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* ===== Lists ===== */
+ul, ol {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+/* ===== Button ===== */
+button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #444;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ===== Divider ===== */
+hr {
+    border: none;
+    border-top: 1px solid #222;
+    margin: 40px auto;
+    width: 80%;
+}
+
+/* ===== Message Box ===== */
+#messageBox {
+    margin-top: 15px;
+    font-weight: 400;
+    color: #cccccc;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#messageBox.show {
+    opacity: 1;
+}
